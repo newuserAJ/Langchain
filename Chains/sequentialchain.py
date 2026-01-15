@@ -10,7 +10,7 @@ llm=ChatGroq(model="llama-3.1-8b-instant", temperature=0)
 prompt1=PromptTemplate(template="Give detailed report on {topic}.",
                        input_variables=["topic"])
 
-prompt2=PromptTemplate(template="Generate  5 pointers from the following text: {text}",
+prompt2=PromptTemplate(template="Generate 5 pointers from the following text: {text}",
                        input_variables=["text"])
 
 parser=StrOutputParser()
