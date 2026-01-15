@@ -17,6 +17,6 @@ chain= prompt | llm | parser
 result=chain.invoke({'topic':'cricket'}) 
 print(result)
 
-# graph of how the chain works 
+# graph of how the chain works the workflow
 chain.get_graph().print_ascii()
 
