@@ -23,7 +23,7 @@ parallel_chain=RunnableParallel({
 
 final_chain=RunnableSequence(joke_chain,parallel_chain)
 
-result=final_chain.invoke('cricket')
+result=final_chain.invoke('people')
 
 final_result= '''{} \n word count:{}'''.format(result['joke'],result['word_count'])
 
