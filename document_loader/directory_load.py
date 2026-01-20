@@ -21,7 +21,7 @@ docs=loaderr.lazy_load()
 # print(docs[0].metadata)
 
 #Using lazy loading to load documents one at a time
-#lazy_loader=DirectoryLoader(path='BOOKS',glob='*.pdf',loader_cls=PyPDFLoader,lazy_load=True)
+'''lazy_loader=DirectoryLoader(path='BOOKS',glob='*.pdf',loader_cls=PyPDFLoader,lazy_load=True)'''
 
 for doc in docs:
-    print(doc.metadata)
+    print(doc.metadata)   #Faster output to load docs one at a time  
